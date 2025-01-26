@@ -1,0 +1,1265 @@
+/* games page css */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Adjusted height for mobile */
+    overflow: hidden;
+}
+
+.slides {
+    width: 300%;
+    height: 100%;
+    display: flex;
+}
+
+.slide {
+    width: 33.33%;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.slide::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+}
+
+.slide-content h2 {
+    font-family: Arial, sans-serif;
+    font-size: 2rem; /* Smaller font size for mobile */
+    font-weight: bold;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.highlight {
+    color: #00f7ff;
+}
+
+.slide-content p {
+    font-family: Arial, sans-serif;
+    font-size: 1rem; /* Smaller font size for mobile */
+    font-weight: normal;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+}
+
+.navigation a {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    transition: 0.3s;
+}
+
+.navigation a:hover {
+    background: #fff;
+}
+
+#slide1:target ~ .navigation a:nth-child(1),
+#slide2:target ~ .navigation a:nth-child(2),
+#slide3:target ~ .navigation a:nth-child(3) {
+    background: #fff;
+}
+
+/* Slide animations */
+.slides {
+    animation: slideshow 15s infinite;
+}
+
+@keyframes slideshow {
+    0%, 33% {
+        transform: translateX(0);
+    }
+    34%, 66% {
+        transform: translateX(-33.33%);
+    }
+    67%, 100% {
+        transform: translateX(-66.66%);
+    }
+}
+
+/*Games page start */
+
+
+h1 {
+    text-align: left;
+    font-size: 1.5rem;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+/* Mobile-first: Grid layout for 2 items in a row */
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two items in a row */
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 12px;
+}
+
+p{ font-size: 0.8rem;}
+.game-item {
+    background-color: #1f2937;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    padding-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.game-image-container {
+    position: relative;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+}
+
+.game-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.game-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 1rem;
+    text-align: left;
+}
+
+.game-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.game-details p{
+  color: #a4d0dd;
+}
+
+.game-price {
+    color: #4ade80;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    font-size: 0.8rem;
+}
+
+.discount {
+    position: absolute;
+    top: -19px; /* Adjust this to position the discount above */
+    left: 0;
+    font-size: 0.8rem; /* Adjust font size */
+    color: #f87171; /* You can change this color if you prefer */
+    top:-18px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #b0b0b0; /* Grey color for the original price */
+    font-size: 0.8rem; /* Adjust font size */
+}
+
+.game-description {
+    padding: 0 1rem;
+    font-size: 1rem;
+    color: white;
+    display: block;
+    opacity: 1;
+    max-height: 1000px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    text-align: left;
+}
+
+/* Hover effect for larger screens (desktop) */
+.game-item:hover {
+    padding-bottom: 2rem; /* Space for the description when hovered */
+}
+
+.game-item:hover .game-description {
+    opacity: 1;
+    max-height: 1000px; /* Make the description visible */
+}
+
+/* Hover effect only for the item being hovered */
+.game-item:hover {
+    transform: scale(1.05); /* Optional: Slight zoom effect on hover */
+
+}
+
+ul.tabs {
+    list-style: none;
+    width: 100%;
+    background: #1f2335; /* Blue background */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 8px 16px;
+    overflow-x: auto;
+    white-space: nowrap;
+    border-bottom: 1px solid #2f334d;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  
+}
+
+ul.tabs li {
+  padding: 12px 24px;
+  margin: 0 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #a9b1d6; /* Softer text color */
+  background-color: transparent;
+  text-align: center;
+  border-radius: 6px;     /* hover in the list item  */
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Add hover effect for better interactivity */
+ul.tabs li:hover {
+  background-color: #2f334d;
+  color: #c0caf5;
+  transform: translateY(-1px);/* Darker blue on hover */
+/* Slightly raise the element */
+}
+
+ul.tabs li a {
+    text-decoration: none;
+    color: inherit; /* Inherit the color of the list item */
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    
+    letter-spacing: 0.5px; /* Slight letter spacing for better readability */
+    text-transform: capitalize; /* Capitalize each word */
+     /* Smooth color transition on hover */
+}
+
+/* Hover effect for links */
+ul li a:hover {
+    color: #f3f4f6; /* Light gray text color when hovered */
+}
+
+.content section {
+  display: none;
+  padding: 20px;
+ 
+  color: white;
+ padding: 1rem;
+  background: #1f2335;
+  margin-top: 0%;
+  position: relative;
+}
+
+/* Hide all sections by default */
+
+
+/* Show Action section by default when no hash is present */
+.content section#Action:not(:target):not(:has(~ section:target)) {
+  display: block;
+
+}
+
+/* Show targeted section */
+.content section:target {
+ display: block;
+  
+}
+
+
+/* Mobile-first layout (default for small screens) */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+   
+    margin: 0 auto;
+    width: 100%; /* Full width on mobile */
+    padding: 0rem;
+    padding-top: 60px;
+   
+
+  }
+  
+  .content .game-grid {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    gap: 1rem;
+    width: 100%;
+  }
+  
+  .content .game-item {
+    display: flex;
+    flex-direction: row;  /* Image on left, content on right */
+    background: rgb(11, 31, 48);
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    padding-bottom: 0%;
+    border-radius: 10px;
+    
+  }
+  
+  .content .game-image-container {
+    width: 70%; /* Set image width to 50% on mobile */
+    aspect-ratio: auto;
+    overflow: hidden;
+  
+  
+  }
+  
+  .content .game-image{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    overflow: hidden;
+    
+  }
+ 
+  
+  .content .contents {
+    padding: 0.5rem;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 80%;  /* Content takes up 50% of width on mobile */
+  }
+  
+  .content .game-title {
+    font-size: 1.2rem; /* Adjust title size for mobile */
+    color: #fffdfd;
+  }
+  
+  .content .game-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+  
+  .content .game-details p {
+    color: #fffcfc;
+  }
+  
+  .content .game-price {
+    margin-top: -27px;
+    align-self: flex-end; /* Align price to the left on mobile */
+    font-size: 0.9rem;
+    color: #2ecc71;
+    font-weight: bold;
+  }
+  
+  .content .game-description {
+    color: #f5f0e5;
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+  
+  .date {
+    font-size: 0.8rem;
+  }
+  
+  .content .game-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .content .game-item:hover .game-description {
+    opacity: 1;
+    max-height: 1000px; /* Make the description visible on hover */
+  }
+
+  .gen{
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  .new{
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #5766a7;
+  
+    
+  }
+  
+  /* Media Queries for Larger Screens */
+  @media (min-width: 768px) {
+
+    .game-price, .discount, .original-price {
+      font-size: 0.9rem;
+       /* Just an example color */
+      
+  }
+
+    ul.tabs{
+        background-color:  #566a8b;
+        width: 70%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    ul.tabs li{
+        color: #ffffff;
+    }
+    
+    .content {
+      width: 100%;  /* Slightly reduce the content width on tablets */
+    }
+     .content .game-image-container {
+      width: 45%; /* Image width is slightly reduced on larger screens */
+      
+    }
+  
+    .content .contents {
+      width: 55%;  /* Content takes up 55% of width on tablets */
+    }
+  
+    .content .game-title {
+      font-size: 1.8rem; /* Increase title size on tablets */
+    }
+  
+    .content .game-price {
+      font-size: 1rem; /* Increase price font on tablets */
+    }
+  
+    .content .game-description {
+      font-size: 1.1rem; /* Increase description font on tablets */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    footer{
+      bottom: 0 !important;
+    }
+    
+    
+    /* For larger desktop screens */
+    .content {
+       
+        padding: 1rem;
+        margin: 0 auto;
+        width: 60%;  /* Set the width to 50% of the container */
+        height: 50%;  /* Set content width to 70% on desktop */
+    }
+  
+    .content  .game-image-container {
+        max-width: 45%;
+      aspect-ratio: auto;
+      
+      }
+      
+      .content  .game-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+    .content .game-title {
+      font-size: 1.5rem; /* Increase font size of title on desktop */
+    }
+  
+    .content .game-price {
+      font-size: 1rem; /* Increase font size of price on desktop */
+    }
+  
+    .content .game-description {
+      font-size: 1rem; /* Increase description font on desktop */
+    }
+  }
+/* For even larger screens (larger desktop/tablet) */
+@media (min-width: 1200px) {
+    .game-grid {
+        grid-template-columns: repeat(3, 1fr); /* Three items in a row */
+    }
+}
+
+
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    .slider {
+        height: 400px; /* Adjusted height for larger screens */
+    }
+
+    .slide-content h2 {
+        font-size: 3.5rem; /* Larger font size for larger screens */
+    }
+
+    .slide-content p {
+        font-size: 1.25rem; /* Larger font size for larger screens */
+    }
+
+/*game section */
+
+h1{
+    margin-left:5.5rem;
+    padding: 10px;
+}
+.game-item {
+    padding-bottom: 0; /* No initial padding on larger screens */
+}
+.game-description {
+    opacity: 0;
+    max-height: 0;
+}
+#new{
+  border-radius: 10px;
+  background-color: #5766a7;
+  padding: 3px 10px ;
+  font-size: 0.8rem;
+  
+}
+
+.game-image-container {
+   
+    aspect-ratio: 16/9;
+}
+
+}
+
+/* consoles page */
+/* consoles page */
+.consoles-p * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.consoles-pg body {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+.consoles-pg .banners {
+ 
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+
+.consoles-pg .banners h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 2px 10px;
+  margin: 15px 0;
+  text-align: center;
+  color: #a4afcccc;
+}
+
+.consoles-pg .banners p {
+  font-size: 1rem;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  padding: 8px;
+  text-align: center;
+  color: #cbd5e1;
+}
+
+
+
+.consoles-pg .card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+/* Mobile First Card style */
+.consoles-pg .card_article {
+  background-color: #1e293b;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #334155;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Ensure the content is centered */
+}
+
+.consoles-pg .card_article:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  border-color: #475569;
+}
+
+/* Image style */
+.consoles-pg .card_article img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: #e9e6e6;
+  padding: 0.75rem;
+  transition: transform 0.3s ease;
+}
+
+.consoles-pg .card_article:hover img {
+  transform: scale(1.05);
+}
+
+/* Text and Price Styling */
+.consoles-pg .card__data {
+  color: #e2e8f0;
+  padding: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Card Title */
+.consoles-pg .card_title {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  color: #92b3f5;
+  font-weight: 600;
+}
+
+.consoles-pg .card_article p {
+  color: #c6cfdb;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+  font-size: 0.85rem;
+}
+
+/* Mobile price style */
+.consoles-pg .card_price {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #34d399;
+  border-radius: 0.5rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+/* Space between description and price */
+}
+
+
+
+/* Mobile version updates */
+@media screen and (max-width: 767px) {
+  .consoles-pg .card_article {
+      flex-direction: column; /* Stack the elements vertically */
+     padding: 4%;
+     
+      align-items: center; /* Center the items */
+  }
+
+  .consoles-pg  .card__data {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .consoles-pg  .card_article img {
+      margin-bottom: 1rem;
+  }
+
+  /* Ensure the price is below the description */
+  .consoles-pg  .offer-badge {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      background: linear-gradient(135deg, #34d399 0%, #059669 100%);
+      color: white;
+      padding: 2%;
+      border-radius: 0.5rem;
+      font-size: 0.8rem;
+      font-weight: 400;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      z-index: 10;
+      margin-bottom: 2px;
+      transition: transform 0.3s ease;
+  }
+  
+}
+
+@media screen and (min-width: 768px) {
+
+
+/* Desktop version */
+
+.consoles-pg .banners h1 {
+      font-size: 3.5rem;
+  }
+
+  .consoles-pg   .banners p {
+      font-size: 1.3rem;
+  }
+
+  @media screen and (min-width: 768px) {
+      .consoles-pg  .container {
+          max-width: 1200px; /* Keep this to center-align the grid */
+          margin: 0 auto; /* Center the container */
+          padding: 1rem; /* Add spacing inside the container */
+          padding: 1rem; /* Add padding for spacing */
+          display: flex; /* Ensure flex behavior */
+          flex-wrap: wrap; /* Allow wrapping if needed */
+          justify-content: center; /* Center align items in the container */
+          
+      }
+  
+      .consoles-pg  .card {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr); /* Force 3 cards per row on desktop */
+          gap: 1.5rem; /* Add spacing between the cards */
+          width: 100%; /* Ensure the grid container takes full width */
+          margin: 0px 5rem;
+      }
+  
+      .consoles-pg  .card_article {
+          width: 100%; /* Allow the card to stretch fully in the grid */
+          max-width: none; /* Remove the 300px cap to ensure cards take full space */
+          padding: 1rem; /* Add padding inside the cards */
+          box-sizing: border-box; /* Ensure padding doesn't affect card width */
+      }
+  
+     
+  
+      .consoles-pg   .card_title {
+          font-size: 1.25rem;
+      }
+  
+      .consoles-pg  .card_article p {
+          font-size: 0.9rem;
+      }
+
+      .consoles-pg  .card_price {
+      position: absolute;
+      left: 58%;
+      bottom: -100%;
+      transform: translateX(-50%) translateX(80px);
+      width: calc(100% - 2rem);
+      
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      backdrop-filter: blur(4px);
+      color: #34d399;
+      background: rgba(15, 23, 42, 0.95);
+      padding: 0.25rem;
+      border-radius: 0.5rem;
+      width:30%;
+      text-align: center;
+      border: 1px solid #475569;
+      margin-top: 1rem; 
+  }
+
+  .consoles-pg  .card_article:hover .card_price {
+      bottom: 0.5rem;
+  }
+
+ 
+  .consoles-pg .offer-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: linear-gradient(135deg, #34d399 0%, #059669 100%);
+  color: white;
+  padding: 0.5rem 0.65rem;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 400;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+ 
+  transition: transform 0.3s ease;
+}
+
+.consoles-pg .card_article:hover .offer-badge {
+  transform: rotate(0deg) scale(1.05);
+}
+
+/* Mobile adjustments for offer badge */
+@media screen and (max-width: 767px) {
+  .consoles-pg .offer-badge {
+      font-size: 0.75rem;
+      padding: 0.35rem 0.5rem;
+      top: 0.75rem;
+      right: 0.75rem;
+  }
+}
+  }
+}
+
+/* peripherals page */
+/* General Styles - Mobile First */
+.peri-pg * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.peri-pg body {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+.peri-pg h1, h2 {
+  text-align: center;
+  margin: 30px 0;
+  color: #f8fafc;
+  font-weight: 700;
+}
+
+.peri-pg h1 {
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.peri-pg h2 {
+  font-size: 2rem;
+  color: #a7c0df;
+  margin-top: 3rem;
+}
+
+/* Mobile First Card Grid */
+.peri-pg .card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.peri-pg .card {
+  background-color: #1e293b;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border: 1px solid #334155;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  position: relative; /* Ensure the offer badge is positioned correctly */
+}
+
+.peri-pg .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  border-color: #475569;
+}
+
+.peri-pg .card img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  background-color: #e9e6e6;
+  padding: 0.75rem;
+  border-bottom: 1px solid #334155;
+  transition: transform 0.3s ease;
+}
+
+.peri-pg .card:hover img {
+  transform: scale(1.05);
+}
+
+.peri-pg .details {
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.peri-pg .details h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  color: #60a5fa;
+  font-weight: 600;
+}
+
+.peri-pg .details p {
+  font-size: 0.85rem;
+  margin-bottom: 0.75rem;
+  color: #94a3b8;
+  line-height: 1.5;
+}
+
+/* Mobile price style */
+.peri-pg .details span {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #34d399;
+  background: rgba(15, 23, 42, 0.95);
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #475569;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+.peri-pg .offer-badge {
+  position: absolute;
+  top: 0.2rem;
+  right: 0.2rem;
+  background: linear-gradient(135deg, #34d399 0%, #059669 100%);
+  color: white;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  transition: transform 0.3s ease;
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .peri-pg h1 {
+      font-size: 3rem;
+  }
+
+  .peri-pg h2 {
+      font-size: 2.25rem;
+  }
+
+  .peri-pg.card-grid {
+      gap: 1.5rem;
+      padding: 1.5rem;
+  }
+
+  .peri-pg.card img {
+      height: 180px;
+  }
+
+  .peri-pg.details h3 {
+      font-size: 1.2rem;
+  }
+
+  .peri-pg .details p {
+      font-size: 0.9rem;
+  }
+
+  .peri-pg .offer-badge {
+      top: 1rem;
+      right: 1rem;
+      padding: 0.5rem 0.65rem;
+      font-size: 0.85rem;
+  }
+
+  .peri-pg .card:hover .offer-badge {
+      transform: rotate(0deg) scale(1.05);
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  .peri-pg h1 {
+      font-size: 3rem;
+  }
+
+  .peri-pg h2 {
+      font-size: 2rem;
+  }
+
+  .peri-pg .card-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      padding: 2rem;
+      margin: 0rem 8rem;
+  }
+
+  .peri-pg .card img {
+      height: 200px;
+  }
+
+  .peri-pg .details h3 {
+      font-size: 1.25rem;
+  }
+
+  .peri-pg.details p {
+      font-size: 0.9rem;
+  }
+
+  /* Desktop hover price effect */
+  .peri-pg .details span {
+      position: absolute;
+      left: 58%;
+      bottom: -100%;
+      transform: translateX(-70%) translateX(90px);
+      width: calc(100% - 2rem);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      backdrop-filter: blur(4px);
+      color: #34d399;
+      background: rgba(15, 23, 42, 0.95);
+      padding: 0.25rem;
+      border-radius: 0.5rem;
+      width: 30%;
+      text-align: center;
+      border: 1px solid #475569;
+      margin-top: 1rem;
+      font-size: 1rem;
+      font-weight: 600;
+    
+  }
+
+  .peri-pg .card {
+      position: relative;
+      bottom: 0.25rem;
+  }
+
+  .peri-pg .card:hover .details span {
+      bottom: 1rem;
+  }
+
+  .peri-pg .offer-badge {
+      top: 0.2rem;
+      right: 0.2rem;
+      background: linear-gradient(135deg, #b1d392 0%, #059669 100%);
+      padding: 0.5rem 0.65rem;
+      font-size: 0.85rem;
+  }
+
+  .peri-pg .card:hover .offer-badge {
+      transform: rotate(0deg) scale(1.05);
+  }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1440px) {
+  .peri-pg .card-grid {
+      grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* FAQ Page */
+
+/* Base Styles (Mobile-First) */
+.faq-pg .content-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3%;
+  font-family: Arial, sans-serif;
+}
+
+.faq-pg h2{
+  color: #d4e9ff;
+  font-size: 1.5rem;
+}
+
+.faq-pg h1 {
+  color: #22272b;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.faq-pg .faq-container {
+  width: 90%;
+  margin: 20px 0;
+}
+
+.faq-pg .faq {
+  background-color: #8cadb3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.faq-pg .faq label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #caebf0;
+  color: rgb(0, 0, 0);
+  padding: 15px;
+  margin: 10px 0;
+  font-size: 1.1rem;
+  text-align: left;
+  width: 100%; /* Ensure the label takes up full width */
+  box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.faq-pg h3 {
+  text-align: center;
+  color: #eef4f8;
+  font-size: 1.3rem;
+  padding: 10px;
+}
+
+.faq-pg .faq input[type="checkbox"] {
+  display: none;
+}
+
+.faq-pg .faq p {
+  display: none;
+  margin-top: 10px;
+  color: #212b2c;
+  background-color: #dcecf0;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.faq-pg .faq input[type="checkbox"]:checked + label + p {
+  display: block;
+}
+
+.faq-pg .faq label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #caebf0;
+  color: rgb(0, 0, 0);
+  padding: 15px;
+  margin: 10px 0;
+  font-size: 1.1rem;
+  text-align: left;
+  width: 100%; /* Ensure the label takes up full width */
+  box-sizing: border-box; /* Include padding and border in width calculation */
+  position: relative; /* Ensure the arrow positions properly */
+}
+
+/* Ensure arrow displays by default */
+.faq-pg .faq label::after {
+  content: "▼"; /* Default down arrow */
+  margin-left: 10px;
+  font-size: 1rem; /* Larger size */
+  transition: transform 0.3s ease;
+  display: inline-block; /* Ensure it shows correctly */
+}
+
+/* Rotate arrow when checkbox is checked */
+.faq-pg .faq input[type="checkbox"]:checked + label::after {
+  content: "▲"; /* Up arrow */
+  transform: rotate(180deg); /* Flip the arrow */
+}
+
+.faq-pg .faq input[type="checkbox"] {
+  display: none;
+}
+
+.faq-pg form {
+  background-color: #8cadb3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 90%;
+  margin: 0 auto;
+  color: #22272b;
+}
+
+.faq-pg
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+.faq-pg form textarea {
+  height: 150px;
+  resize: none;
+}
+
+.faq-pg form input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #20587a;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.faq-pg form input[type="submit"]:hover {
+  background-color: #3498db;
+}
+
+.faq-pg .name-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq-pg .name-container input {
+  width: 48%;
+}
+
+.faq-pg
+/* Add transition for labels in the FAQ and navigation */
+.faq label,
+.navbar label {
+  transition: background-color 0.5s ease, color 0.3s ease; /* Slow transition for background and color */
+}
+
+.faq-pg
+.faq label:hover,
+.navbar label:hover {
+  background-color: #62859c; /* Change background color on hover */
+  color: rgb(0, 0, 0); /* Change text color on hover */
+}
+
+
+/* Media Queries for larger screens */
+@media screen and (min-width: 768px) {
+  .faq-pg h2 {
+      text-align: center;
+      font-size: 1.5rem !important;
+      margin-left: 60px;
+  }
+
+
+  .faq-pg h1 {
+      font-size: 1.5rem !important;
+  }
+
+  .faq-pg p {
+    font-size: 1rem;
+}
+
+  .faq-pg .faq-container {
+      width: 80%; /* Slightly narrower for larger screens */
+  }
+
+  .faq-pg form{
+      width: 80%;
+  }
+}

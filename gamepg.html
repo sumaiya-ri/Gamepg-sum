@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="gamepg.css">
+    <link rel="stylesheet" type="text/css" href="index.css"> 
+
+</head>
+<body>
+    <header> 
+
+        <nav class="navbar"> 
+                <div class="logo">
+                    <img src="./Images/lulu.png" alt="logo">
+                </div>
+                
+                <!-- Hamburger Menu -->
+                <input type="checkbox" id="sidebar-active">
+                <label for="sidebar-active" class="open-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                 </svg>
+                </label>
+            
+                <!--close button-->
+                <label id="overlay" for="sidebar-active"></label>
+                <!--side bar -->
+                <div class="links-container">
+                <label for="sidebar-active" class="close-sidebar-button">
+                 <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368">
+                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                 </svg>
+                 </label>
+                  
+              
+
+        
+
+       <!--Navigation Links-->
+       
+            <a href="index.html">Home </a> 
+             <a href="about-us.html">About Us </a> 
+            <a href="upcoming-games.html">Upcoming Games</a> 
+            <!--dropdown products -->
+           <div class="dropdown">
+        
+            <input type="checkbox" id="products-active">
+            <label for="products-active" class="dropdown-toggle">Products</label>
+
+                <div class="dropdown-content">
+                    <a href="./consoles.html">Consoles</a>
+                    <a href="./peripherals.html">Peripherals</a>
+                </div>
+                </div>
+               
+            <a href="./gamepg.html" class="is-active">Games </a>   
+           <a href="./faq.html">FAQs </a> 
+        
+    </div>
+        </nav>
+      
+    </header>
+
+   <!---Image slider-->
+    <div class="slider">
+        <div class="slides">
+            <div class="slide" id="slide1">
+                <img src="./Images/herobannergives.jpg" alt="Gaming 1">
+                <div class="slide-content">
+                    <h2>EXPLORE <span class="highlight">EPIC</span> WORLDS</h2>
+                    <p>Immerse yourself in stunning gaming landscapes</p>
+                </div>
+            </div>
+            <div class="slide" id="slide2">
+                <img src="./Images/pretty.webp" alt="Gaming 2">
+                <div class="slide-content">
+                    <h2>COMPETE & <span class="highlight">CONQUER</span></h2>
+                    <p>Join millions of players worldwide</p>
+                </div>
+            </div>
+            <div class="slide" id="slide3">
+                <img src="./Images/ps4.jpg" alt="Gaming 3">
+                <div class="slide-content">
+                    <h2>LEVEL UP YOUR <span class="highlight">GAME</span></h2>
+                    <p>Experience next-gen gaming</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <a href="#slide1"></a>
+            <a href="#slide2"></a>
+            <a href="#slide3"></a>
+        </div>
+    </div>
+
+    <!--Games section-->
+
+<div class="contents">
+    <h1>Latest Games</h1>
+    <div class="game-grid">
+        <div class="game-item">
+            <div class="game-image-container">
+                <img class="game-image" src="./games-images/pathofexilequa.jpg" alt="Elden Ring">
+            </div>
+            <div class="game-title">Path Of Exile 2</div>
+            <div class="game-details">
+                <p class="type">PS 5</p>
+                <span class="game-price">$29.99</span>
+            </div>
+            <div class="game-description">
+                <p>RPG set in the dark fantasy world of Wraeclast. Players will explore new regions, uncover secrets, and battle powerful foes in an expansive, story-driven campaign.</p>
+            </div>
+        </div>
+
+        <div class="game-item">
+            <div class="game-image-container">
+                <img class="game-image" src="./games-images/tankheadac.jpg" alt="Starfield">
+            </div>
+            <div class="game-title">Tank Head</div>
+            <div class="game-details">
+                <p> PC</p>
+                <span class="game-price">$29.99</span>
+            </div>
+            <div class="game-description">
+                <p> fast-paced, tank combat game that pits players against waves of enemies in dynamic, destructible arenas. Upgrade your tank, strategize your attacks, and dominate the battlefield.
+
+                </p>
+            </div>
+        </div>
+
+        <div class="game-item">
+            <div class="game-image-container">
+                <img class="game-image" src="games-images/stalker2ac.jpg" alt="Spider-Man 2">
+            </div>
+            <div class="game-title">STALKER 2: Heart of Chornobyl
+                </div>
+            <div class="game-details">
+                <p> Xbox Series </p>
+                <span class="game-price">$109.99</span>
+            </div>
+            <div class="game-description">
+                <p>immerses players in a post-apocalyptic world filled with mutants, anomalies, and hostile factions. Explore the dangerous and eerie Chernobyl Exclusion Zone in this atmospheric open-world survival shooter.</p>
+            </div>
+        </div>
+
+        <div class="game-item">
+            <div class="game-image-container">
+                <img class="game-image" src="./games-images/farming.jpg" alt="Elden Ring">
+            </div>
+            <div class="game-title">Farming Simulator 25</div>
+            <div class="game-details">
+                <p class="type">PS 4</p>
+                <span class="game-price">$29.99</span>
+            </div>
+            <div class="game-description">
+                <p> lets players manage their own farm, from planting crops to raising animals. Experience realistic farming with a variety of vehicles, tools, and machinery in an immersive open-world environment.</p>
+            </div>
+        </div>
+
+        <div class="game-item">
+            <div class="game-image-container">
+                <img class="game-image" src="./games-images/Blackmythwuk.jpg" alt="Starfield">
+            </div>
+            <div class="game-title">Black Myth Wukong</div>
+            <div class="game-details">
+                <p> PS 5</p>
+                <span class="game-price">$59.99</span>
+            </div>
+            <div class="game-description">
+                <p>An action RPG inspired by Chinese mythology, where players control the legendary Monkey King. Explore a world of mystical creatures and challenging combat.</p>
+            </div>
+        </div>
+
+        <div class="game-item">
+            <div class="game-image-container">
+                <img class="game-image" src="/games-images/dragonagee.jpg" alt="Spider-Man 2">
+            </div>
+            <div class="game-title">Dragon Age</div>
+            <div class="game-details">
+                <p> PS 5</p>
+                <span class="game-price">$59.99</span>
+            </div>
+            <div class="game-description">
+                <p>takes players into a dark fantasy world filled with tactical combat and tough choices. Battle sinister forces and shape the fate of the realm.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+<!--Top Sellers-->
+
+<h1>Top Sellers</h1>
+    <div class="game-grid">
+        <div class="game-item">
+            <div class="game-image-container">
+                <img class="game-image" src="./games-images/FC25REal.jpg" alt="Elden Ring">
+            </div>
+            <div class="game-title">EA SPORTS FC™ 25 Standard Edition</div>
+            <div class="game-details">
+                <p class="type">PS 4 | PS5</p>
+                <span class="game-price">$109.99</span>
+            </div>
+            <div class="game-description">
+                <p>The next evolution of football gaming, featuring realistic gameplay and enhanced modes. Compete with top teams and players in a global football experience.</p>
+            </div>
+        </div>
+
+        <div class="game-item">
+            <div class="game-image-container">
+                <img class="game-image" src="./games-images/Grandtheftautoo.jpeg" alt="Starfield">
+            </div>
+            <div class="game-title">Grand Theft Auto 5 </div>
+            <div class="game-details">
+                <p> PS4 |PS5 |Xbox series </p>
+                <span class="game-price">$69.99</span>
+            </div>
+            <div class="game-description">
+                <p> Immerse yourself in the action-packed world of Los Santos, where crime, chaos, and adventure await. Play as three unique characters in an open-world experience with endless possibilities.
+
+                </p>
+            </div>
+        </div>
+
+        <div class="game-item">
+            <div class="game-image-container">
+                <img class="game-image" src="games-images/deadredemption2.jpg" alt="Spider-Man 2">
+            </div>
+            <div class="game-title">Red Dead Redemption 2
+                </div>
+            <div class="game-details">
+                <p> PS 4</p>
+                <span class="game-price">$59.99</span>
+            </div>
+            <div class="game-description">
+                <p>immerses players in a post-apocalyptic world filled with mutants, anomalies, and hostile factions. Explore the dangerous and eerie Chernobyl Exclusion Zone in this atmospheric open-world survival shooter.</p>
+            </div>
+        </div>
+
+        <div class="game-item">
+            <div class="game-image-container">
+                <img class="game-image" src="./games-images/hogwartslegacyr.avif" alt="Elden Ring">
+            </div>
+            <div class="game-title">Hogwarts Legacy</div>
+            <div class="game-details">
+                <p class="type">PS 4 |PS 5 |Nintendo </p>
+                <span class="game-price">$69.99</span>
+            </div>
+            <div class="game-description">
+                <p> Step into the Wizarding World and shape your own magical destiny. Explore Hogwarts, master spells, and uncover ancient secrets in an immersive open-world adventure.
+                </p>
+            </div>
+        </div>
+
+        <div class="game-item">
+            <div class="game-image-container">
+                <img class="game-image" src="./games-images/deadbydaylight.jpg" alt="Starfield">
+            </div>
+            <div class="game-title">Dead by Daylight</div>
+            <div class="game-details">
+                <p> PS 4</p>
+                <span class="game-price">$19.99</span>
+            </div>
+            <div class="game-description">
+                <p>A thrilling multiplayer horror game where one player hunts while others escape. Survivors must work together to evade the killer and escape the terrifying trials.
+
+
+
+                </p>
+            </div>
+        </div>
+
+        <div class="game-item">
+            <div class="game-image-container">
+                <img class="game-image" src="./games-images/thewitcher33.jpg" alt="Spider-Man 2">
+            </div>
+            <div class="game-title">The Witcher 3</div>
+            <div class="game-details">
+                <p> Nintendo </p>
+                <span class="game-price">$24.99</span>
+            </div>
+            <div class="game-description">
+                <p>an epic open-world RPG where you play as Geralt of Rivia, a monster hunter on a quest to find his adopted daughter. With its rich story, complex characters, and vast world, it offers a deeply immersive experience.
+             </p>
+            </div>
+        </div>
+    </div>
+
+<!--Most Played Games-->
+
+<h1>Most Played Games</h1>
+    <div class="game-grid">
+        <div class="game-item">
+            <div class="game-image-container">
+                <img class="game-image" src="./games-images/pubggg.jpg" alt="Elden Ring">
+            </div>
+            <div class="game-title">PUBG</div>
+            <div class="game-details">
+                <p class="type">PS 4</p>
+                <span class="game-price">$74.96</span>
+            </div>
+            <div class="game-description">
+                <p>PUBG (PlayerUnknown's Battlegrounds) is a battle royale game where 100 players fight to be the last survivor. It features intense combat, tactical gameplay, and large, open maps for strategic play.
+    </p>
+            </div>
+        </div>
+
+        <div class="game-item">
+            <div class="game-image-container">
+                <img class="game-image" src="./games-images/fb2024.jpg" alt="Starfield">
+            </div>
+            <div class="game-title">Foot Ball Manager 2024 </div>
+            <div class="game-details">
+                <p> PS 5 | Xbox one</p>
+                <span class="game-price">$18.59</span>
+            </div>
+            <div class="game-description">
+                <p> lets you take control of your favorite football club and make key decisions on tactics, transfers, and match strategies. Experience the thrill of managing a team to success in the world’s most popular sport.
+                </p>
+            </div>
+        </div>
+
+        <div class="game-item">
+            <div class="game-image-container">
+                <img class="game-image" src="./games-images/Callofduty.jpg" alt="Spider-Man 2">
+            </div>
+            <div class="game-title">Call of duty
+                </div>
+            <div class="game-details">
+                <p> PS4 | PS5</p>
+                <span class="game-price">$69.99</span>
+            </div>
+            <div class="game-description">
+                <p>Call of Duty offers fast-paced, action-packed combat across various settings, from modern warfare to historical battles. Engage in intense multiplayer matches or immersive single-player campaigns.
+
+
+
+                </p>
+            </div>
+        </div>
+
+        <div class="game-item">
+            <div class="game-image-container">
+                <img class="game-image" src="./games-images/thelastofus.jpg" alt="Elden Ring">
+            </div>
+            <div class="game-title">The last of us:part II</div>
+            <div class="game-details">
+                <p class="type">PS 4 | PS5</p>
+                <span class="game-price">$49.99</span>
+            </div>
+            <div class="game-description">
+                <p>A gripping action-adventure game that follows Ellie’s journey of revenge in a post-apocalyptic world. With deep storytelling and emotional highs and lows, it offers intense combat and exploration.
+                </p>
+            </div>
+        </div>
+
+        <div class="game-item">
+            <div class="game-image-container">
+                <img class="game-image" src="./games-images/hellletloose.jpg" alt="Starfield">
+            </div>
+            <div class="game-title">Hell let loose</div>
+            <div class="game-details">
+                <p> PS5 | Xbox Series</p>
+                <span class="game-price">$35.99</span>
+            </div>
+            <div class="game-description">
+                <p>A tactical World War II first-person shooter that focuses on large-scale battles with realistic combat mechanics. Players must work together in squads to capture objectives and defeat the enemy.
+
+
+
+                </p>
+            </div>
+        </div>
+
+        <div class="game-item">
+            <div class="game-image-container">
+                <img class="game-image" src="./games-images/marvelsspiderman.jpg" alt="Spider-Man 2">
+            </div>
+            <div class="game-title">Marvels spiderman</div>
+            <div class="game-details">
+                <p> PS 5</p>
+                <span class="game-price">$69.99</span>
+            </div>
+            <div class="game-description">
+                <p>Marvel's Spider-Man lets you swing through New York City as Peter Parker, battling iconic villains. Enjoy dynamic combat, an engaging story, and an expansive open world.
+             </p>
+            </div>
+        </div>
+    </div>
+
+
+
+<!--Discounted Games-->
+
+<h1>Featured Discounts</h1>
+    <div class="game-grid">
+        <div class="game-item">
+            <div class="game-image-container">
+                <img class="game-image" src="./games-images/sonicx.jpg" alt="Elden Ring">
+            </div>
+            <div class="game-title">Sonic X shadows</div>
+            <div class="game-details">
+                <p class="type">PS 4 | PS5</p>
+                <span class="game-price">
+                    <span class="discount">-20%</span>
+                    <span class="original-price">$49.99</span><br>
+                    $39.99
+                </span>
+            </div>
+            
+            <div class="game-description">
+                <p>Fast-paced animated series featuring Sonic the Hedgehog and his friends as they embark on adventures across various dimensions to protect the world from evil forces.
+    </p>
+            </div>
+        </div>
+
+        <div class="game-item">
+            <div class="game-image-container">
+                <img class="game-image" src="./games-images/tombraider.webp" alt="Starfield">
+            </div>
+            <div class="game-title">Tomb Raider</div>
+            <div class="game-details">
+                <p> PS 4 | PS5 | Xbox </p>
+                <span class="game-price">
+                    <span class="discount">-12%</span>
+                    <span class="original-price">$23.00</span><br> 
+                    $20.00</span>
+            </div>
+            <div class="game-description">
+                <p> An action-adventure game following the iconic archaeologist Lara Croft as she explores ancient tombs and uncovers hidden treasures while battling enemies.
+                </p>
+            </div>
+        </div>
+
+        <div class="game-item">
+            <div class="game-image-container">
+                <img class="game-image" src="./games-images/minecraft.jpg" alt="Spider-Man 2">
+            </div>
+            <div class="game-title">Minecraft
+                </div>
+            <div class="game-details">
+                <p> Nintendo</p>
+                <span class="game-price">
+                    <span class="discount">-15%</span>
+                    <span class="original-price">$30.00</span><br> 
+                      $25.50</span>
+            </div>
+            <div class="game-description">
+                <p>A sandbox game where players can explore, mine, build, and survive in a vast, blocky world filled with endless possibilities.
+
+
+                </p>
+            </div>
+        </div>
+
+        <div class="game-item">
+            <div class="game-image-container">
+                <img class="game-image" src="./games-images/alanwake.avif" alt="Elden Ring">
+            </div>
+            <div class="game-title">Alan Wake II</div>
+            <div class="game-details">
+                <p class="type">PS5 | Xbox  </p>
+                <span class="game-price">
+                    <span class="discount">-20%</span>
+                    <span class="original-price">$59.99</span><br> 
+                           $47.99</span>
+            </div>
+            <div class="game-description">
+                <p>A psychological horror game where Alan Wake, a writer trapped in a nightmarish world, uncovers dark secrets and battles supernatural forces. It combines intense combat with a deep narrative, offering an immersive experience filled with eerie environments and challenging puzzles.
+
+
+
+
+                </p>
+            </div>
+        </div>
+
+        <div class="game-item">
+            <div class="game-image-container">
+                <img class="game-image" src="./games-images/Battlefield2042.jpg" alt="Starfield">
+            </div>
+            <div class="game-title">Battlefield 2042</div>
+            <div class="game-details">
+                <p> PS4 | PS5</p>
+                <span class="game-price">
+                    <span class="discount">-25%</span>
+                    <span class="original-price">$44.99</span><br>  
+                     $44.99</span>
+            </div>
+            <div class="game-description">
+                <p> fast-paced first-person shooter with 128-player battles, dynamic environments, and advanced weapons. Engage in intense multiplayer combat across diverse maps with strategic gameplay.
+
+                </p>
+            </div>
+        </div>
+
+        <div class="game-item">
+            <div class="game-image-container">
+                <img class="game-image" src="./games-images/Hollowknight.avif" alt="Spider-Man 2">
+            </div>
+            <div class="game-title">Hollow Knight</div>
+            <div class="game-details">
+                <p> PS 4</p>
+                <span class="game-price">
+                    <span class="discount">-10%</span>
+                    <span class="original-price">$19.99</span><br>  
+                    $17.99</span>
+            </div>
+            <div class="game-description">
+                <p>A challenging action-platformer set in a beautifully crafted underground world, filled with tough enemies and intricate puzzles. Explore, battle, and uncover secrets in this critically acclaimed Metroidvania title.
+             </p>
+            </div>
+        </div>
+    </div>
+
+
+<!---Genres-->
+
+
+<h1 class="gen">Genres</h1>
+
+<ul class="tabs">
+    <li><a href="#Action">Action</a></li>
+    <li><a href="#Adventure">Adventure</a></li>
+    <li><a href="#RPG">RPG</a></li>
+    <li><a href="#Simulation">Simulation</a></li>
+    <li><a href="#Sports">Sports</a></li>
+</ul>
+
+<div class="content">
+    <section id="Action">
+
+        <div class="game-grid">
+            <div class="game-item">
+                <div class="game-image-container">
+                    <img class="game-image" src="./games-images/eldenringold.jpg" alt="Elden Ring">
+                </div>
+                <div class="contents">
+                    <div class="game-title">Elden Ring</div>
+                    <div class="game-details">                    
+                        <p class="new">PS4</p> 
+                        <p class="new">PS3</p>
+                        <div class="date">25/02/2022</div>
+                        <span class="game-price">$59.99</span>
+                    </div>
+                    <div class="game-description">
+                        <p>An action RPG developed by FromSoftware. Explore a vast open world filled with danger and discovery.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-grid">
+            <div class="game-item">
+                <div class="game-image-container">
+                    <img class="game-image" src="./games-images/valhalla.jpg" alt="Assassin's Creed Valhalla">
+                </div>
+                <div class="contents">
+                    <div class="game-title">Assassin's Creed Valhalla</div>
+                    <div class="game-details">
+                        <p class="new">PS4</p> 
+                        <p class="new">PS3</p>
+                        <div class="date">10/11/2020</div>
+                        <span class="game-price">$24.99</span>
+                    </div>
+                    <div class="game-description">
+                        <p>Embark on a Viking saga as Eivor, exploring a dynamic open world and engaging in brutal combat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-grid">
+            <div class="game-item">
+                <div class="game-image-container">
+                    <img class="game-image" src="./games-images/godofwar.jpg" alt="God of War">
+                </div>
+                <div class="contents">
+                    <div class="game-title">God of War</div>
+                    <div class="game-details">
+                        <p class="new">PS4</p> 
+                        <p class="new">PS3</p>
+                        <div class="date">20/04/2018</div>
+                        <span class="game-price">$19.99</span>
+                    </div>
+                    <div class="game-description">
+                        <p>Join Kratos and his son Atreus on a journey through Norse mythology in this action-adventure game.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-grid">
+            <div class="game-item">
+                <div class="game-image-container">
+                    <img class="game-image" src="./games-images/Deathstranding.jpg" alt="Death Stranding">
+                </div>
+                <div class="contents">
+                    <div class="game-title">Death Stranding</div>
+                    <div class="game-details">
+                        <p class="new">PS4</p> 
+                        <p class="new">PS3</p>
+                        <div class="date">08/11/2019</div>
+                        <span class="game-price">$39.99</span>
+                    </div>
+                    <div class="game-description">
+                        <p>Experience a unique open-world game where you deliver packages across a fractured America.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-grid">
+            <div class="game-item">
+                <div class="game-image-container">
+                    <img class="game-image" src="./games-images/readyornot.jpg" alt="Ready or Not">
+                </div>
+                <div class="contents">
+                    <div class="game-title">Ready or Not</div>
+                    <div class="game-details">
+                        <p class="new">PS4</p> 
+                        <p class="new">PS3</p>
+                        <div class="date">20/12/2022</div>
+                        <span class="game-price">$39.99</span>
+                    </div>
+                    <div class="game-description">
+                        <p>A tactical first-person shooter focusing on realistic SWAT operations and team-based gameplay.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-grid">
+            <div class="game-item">
+                <div class="game-image-container">
+                    <img class="game-image" src="./games-images/cyberpunk.jpg" alt="Cyberpunk 2077">
+                </div>
+                <div class="contents">
+                    <div class="game-title">Cyberpunk 2077</div>
+                    <div class="game-details">
+                        <p class="new">PS4</p> 
+                        <p class="new">PS3</p>
+                        <div class="date">10/12/2020</div>
+                        <span class="game-price">$29.99</span>
+                    </div>
+                    <div class="game-description">
+                        <p>Immerse yourself in a dystopian future as V, a mercenary navigating the neon-lit streets of Night City.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Adventure">
+        <div class="game-grid">
+            <div class="game-item">
+                <div class="game-image-container">
+                    <img class="game-image" src="./games-images/avatarrr.jpg" alt="Avatar Frontiers">
+                </div>
+                <div class="contents">
+                    <div class="game-title">Avatar Frontiers</div>
+                    <div class="game-details">
+                        <p class="new">PS4</p> 
+                        <p class="new">PS3</p>
+                        <div class="date">07/12/2023</div>
+                        <span class="game-price">$59.99</span>
+                    </div>
+                    <div class="game-description">
+                        <p>Explore the untamed lands of Pandora in this open-world action-adventure game.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-grid">
+            <div class="game-item">
+                <div class="game-image-container">
+                    <img class="game-image" src="./games-images/tombraider.webp" alt="Tomb Raider">
+                </div>
+                <div class="contents">
+                    <div class="game-title">Tomb Raider</div>
+                    <div class="game-details">
+                        <p class="new">PS4</p> 
+                        <p class="new">PS3</p>
+                        <div class="date">05/03/2013</div>
+                        <span class="game-price">$19.99</span>
+                    </div>
+                    <div class="game-description">
+                        <p>Join Lara Croft on her origin story as she survives a deadly expedition on a mysterious island.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-grid">
+            <div class="game-item">
+                <div class="game-image-container">
+                    <img class="game-image" src="./games-images/indianaj.jpg" alt="Indiana Jones and the Great Circle">
+                </div>
+                <div class="contents">
+                    <div class="game-title">Indiana Jones and the Great Circle</div>
+                    <div class="game-details">
+                        <p class="new">PS4</p> 
+                        <p class="new">PS3</p>
+                        <div class="date">TBA</div>
+                        <span class="game-price">TBA</span>
+                    </div>
+                    <div class="game-description">
+                        <p>Join Indiana Jones on an action-packed journey across the world in search of lost relics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-grid">
+            <div class="game-item">
+                <div class="game-image-container">
+                    <img class="game-image" src="./games-images/Hollowknight.avif " alt="Hollow Knight">
+                </div>
+                <div class="contents">
+                    <div class="game-title">Hollow Knight</div>
+                    <div class="game-details">
+                        <p class="new">PS4</p> 
+                        <p class="new">PS3</p>
+                        <div class="date">24/02/2017</div>
+                        <span class="game-price">$14.99</span>
+                    </div>
+                    <div class="game-description">
+                        <p>Explore a vast, interconnected world in this challenging Metroidvania-style game.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-grid">
+            <div class="game-item">
+                <div class="game-image-container">
+                    <img class="game-image" src="./games-images/thewalkingded.jpg" alt="The Walking Dead">
+                </div>
+                <div class="contents">
+                    <div class="game-title">The Walking Dead</div>
+                    <div class="game-details">
+                        <p class="new">PS4</p> 
+                        <p class="new">PS3</p>
+                        <div class="date">04/04/2012</div>
+                        <span class="game-price">$29.99</span>
+                    </div>
+                    <div class="game-description">
+                        <p>Survive the zombie apocalypse in this choice-driven narrative adventure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-grid">
+            <div class="game-item">
+                <div class="game-image-container">
+                    <img class="game-image" src="./games-images/skyrim.avif" alt="Skyrim">
+                </div>
+                <div class="contents">
+                    <div class="game-title">Skyrim</div>
+                    <div class="game-details">
+                        <p class="new">PS4</p> 
+                        <p class="new">PS3</p>
+                        <div class="date">11/11/2011</div>
+                        <span class="game-price">$39.99</span>
+                    </div>
+                    <div class="game-description">
+                        <p>Explore the open world of Skyrim and battle dragons in this epic fantasy RPG.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="RPG">
+        <div class="game-grid">  
+              <div class="game-item">
+                  <div class="game-image-container">
+                      <img class="game-image" src="./games-images/finalfant.jpg" alt="Final Fantasy VI Rebirth">
+                  </div>
+                  <div class="contents">
+                    <div class="game-title">Final Fantasy VI Rebirth</div>
+                    <div class="game-details">
+                        <p class="new">PS4</p> 
+                        <p class="new">PS3</p>
+                  <div class="date">
+                       24/03/2024
+                  </div>
+                      <span class="game-price">$49.99</span>
+                  </div>
+                  <div class="game-description">
+                      <p>A stunning reimagining of the classic RPG. Relive the epic tale of magic and technology in an immersive new experience.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+          <div class="game-grid">  
+              <div class="game-item">
+                  <div class="game-image-container">
+                      <img class="game-image" src="./games-images/Blackmythwuk.jpg" alt="Black Myth: Wukong">
+                  </div>
+                  <div class="contents">
+                    <div class="game-title">Black Myth: Wukong</div>
+                    <div class="game-details">
+                        <p class="new">PS4</p> 
+                        <p class="new">PS3</p>
+                  <div class="date">
+                       15/08/2023
+                  </div>
+                      <span class="game-price">$69.99</span>
+                  </div>
+                  <div class="game-description">
+                      <p>An action-packed journey inspired by Chinese mythology. Play as Wukong and uncover the secrets of a mystical world.</p>
+                  </div>
+              </div>
+          </div>
+  </div>
+          <div class="game-grid">  
+              <div class="game-item">
+                  <div class="game-image-container">
+                      <img class="game-image" src="./games-images/warframe.jpg" alt="Warframe 1999">
+                  </div>
+                  <div class="contents">
+                    <div class="game-title">Warframe 1999</div>
+                    <div class="game-details">
+                        <p class="new">PS4</p> 
+                        <p class="new">PS3</p>
+                  <div class="date">
+                       12/12/2023
+                  </div>
+                      <span class="game-price">$39.99</span>
+                  </div>
+                  <div class="game-description">
+                      <p>Experience the origins of Warframe in this retro-futuristic prequel, blending thrilling combat with deep lore.</p>
+                  </div>
+              </div>
+          </div>
+          </div>
+  
+          <div class="game-grid">  
+              <div class="game-item">
+                  <div class="game-image-container">
+                      <img class="game-image" src="./games-images/dungeon.jpg" alt="Dungeon Siege">
+                  </div>
+                  <div class="contents">
+                    <div class="game-title">Dungeon Siege</div>
+                    <div class="game-details">
+                        <p class="new">PS4</p> 
+                        <p class="new">PS3</p>
+                  <div class="date">
+                       10/10/2022
+                  </div>
+                      <span class="game-price">$29.99</span>
+                  </div>
+                  <div class="game-description">
+                      <p>Embark on an epic adventure through a dangerous world, combining strategic combat with immersive storytelling.</p>
+                  </div>
+              </div>
+          </div>
+          </div>
+  
+          <div class="game-grid">  
+              <div class="game-item">
+                  <div class="game-image-container">
+                      <img class="game-image" src="./games-images/thewitcher33.jpg" alt="The Witcher 3">
+                  </div>
+                  <div class="contents">
+                    <div class="game-title">The Witcher 3</div>
+                    <div class="game-details">
+                        <p class="new">PS4</p> 
+                        <p class="new">PS3</p>
+                  <div class="date">
+                       19/05/2015
+                  </div>
+                      <span class="game-price">$39.99</span>
+                  </div>
+                  <div class="game-description">
+                      <p>Step into the shoes of Geralt of Rivia, a monster hunter in a richly detailed open world full of choices and consequences.</p>
+                  </div>
+              </div>
+          </div>
+          </div>
+              
+          <div class="game-grid">  
+              <div class="game-item">
+                  <div class="game-image-container">
+                      <img class="game-image" src="./games-images/baldursgate.avif" alt="Baldur's Gate 3">
+                  </div>
+                  <div class="contents">
+                    <div class="game-title">Baldur's Gate 3</div>
+                    <div class="game-details">
+                        <p class="new">PS4</p> 
+                        <p class="new">PS3</p>
+                  <div class="date">
+                       06/10/2023
+                  </div>
+                      <span class="game-price">$69.99</span>
+                  </div>
+                  <div class="game-description">
+                      <p>Delve into a world of rich storytelling and deep RPG mechanics, based on the legendary Dungeons & Dragons universe.</p>
+                  </div>
+              </div>
+          </div>
+                
+      </div>
+  
+      </section>
+  
+      <section id="Simulation">
+        <div class="game-grid">  
+            <div class="game-item">
+                <div class="game-image-container">
+                    <img class="game-image" src="./games-images/nba2k25.jpg" alt="NBA 2K25">
+                </div>
+                <div class="contents">
+                  <div class="game-title">NBA 2K25</div>
+                  <div class="game-details">
+                    <p class="new">PS4</p> 
+                    <p class="new">PS3</p>
+                <div class="date">
+                     10/09/2024
+                </div>
+                    <span class="game-price">$69.99</span>
+                </div>
+                <div class="game-description">
+                    <p>The latest installment in the NBA 2K series. Experience realistic basketball gameplay with updated rosters and enhanced graphics.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="game-grid">  
+            <div class="game-item">
+                <div class="game-image-container">
+                    <img class="game-image" src="./games-images/farming.jpg" alt="Farming Simulator">
+                </div>
+                <div class="contents">
+                  <div class="game-title">Farming Simulator</div>
+                  <div class="game-details">
+                    <p class="new">PS4</p> 
+                        <p class="new">PS3</p>
+                <div class="date">
+                     22/11/2023
+                </div>
+                    <span class="game-price">$49.99</span>
+                </div>
+                <div class="game-description">
+                    <p>Manage your own farm and harvest crops in this realistic and immersive farming simulation experience.</p>
+                </div>
+            </div>
+        </div>
+</div>
+        <div class="game-grid">  
+            <div class="game-item">
+                <div class="game-image-container">
+                    <img class="game-image" src="./games-images/FC25REal.jpg" alt="EA Sports FC">
+                </div>
+                <div class="contents">
+                  <div class="game-title">EA Sports FC</div>
+                  <div class="game-details">
+                    <p class="new">PS4</p> 
+                    <p class="new">PS3</p>
+                <div class="date">
+                     29/09/2023
+                </div>
+                    <span class="game-price">$69.99</span>
+                </div>
+                <div class="game-description">
+                    <p>Step into the world of football with enhanced gameplay, realistic physics, and the most immersive stadium experience ever.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="game-grid">  
+            <div class="game-item">
+                <div class="game-image-container">
+                    <img class="game-image" src="./games-images/eurooo.jpg" alt="Euro Truck Simulator 2">
+                </div>
+                <div class="contents">
+                  <div class="game-title">Euro Truck Simulator 2</div>
+                  <div class="game-details">
+                    <p class="new">PS4</p> 
+                    <p class="new">PS3</p>
+                <div class="date">
+                     19/10/2012
+                </div>
+                    <span class="game-price">$29.99</span>
+                </div>
+                <div class="game-description">
+                    <p>Take to the open roads as a truck driver, delivering goods across Europe in this realistic and relaxing simulation game.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="game-grid">  
+            <div class="game-item">
+                <div class="game-image-container">
+                    <img class="game-image" src="./games-images/EAsportswrc.jpg" alt="EA Sports WRC 2">
+                </div>
+                <div class="contents">
+                  <div class="game-title">EA Sports WRC 2</div>
+                  <div class="game-details">
+                  <p class="new">PS4</p> 
+                        <p class="new">PS3</p>
+                <div class="date">
+                     07/03/2025
+                </div>
+                    <span class="game-price">$59.99</span>
+                </div>
+                <div class="game-description">
+                    <p>Experience the thrill of rally racing with realistic physics, licensed cars, and dynamic weather systems.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <section id="Sports">
+        <div class="game-grid">  
+            <div class="game-item">
+                <div class="game-image-container">
+                    <img class="game-image" src="./games-images/f1manager.jpg" alt="F1 Manager 2024">
+                </div>
+                <div class="contents">
+                  <div class="game-title">F1 Manager 2024</div>
+                  <div class="game-details">
+                    <p class="new">PS4</p> 
+                    <p class="new">PS3</p>
+                <div class="date">
+                     18/08/2024
+                </div>
+                    <span class="game-price">$49.99</span>
+                </div>
+                <div class="game-description">
+                    <p>Take control of your favorite F1 team and lead them to victory with strategic decisions and real-time management.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="game-grid">  
+            <div class="game-item">
+                <div class="game-image-container">
+                    <img class="game-image" src="./games-images/EAsportswrc.jpg" alt="EA Sports WRC">
+                </div>
+                <div class="contents">
+                  <div class="game-title">EA Sports WRC</div>
+                  <div class="game-details">
+                    <p class="new">PS4</p> 
+                    <p class="new">PS3</p>
+                <div class="date">
+                     07/03/2025
+                </div>
+                    <span class="game-price">$59.99</span>
+                </div>
+                <div class="game-description">
+                    <p>Get behind the wheel in the official World Rally Championship game with thrilling stages and realistic physics.</p>
+                </div>
+            </div>
+        </div>
+</div>
+        <div class="game-grid">  
+            <div class="game-item">
+                <div class="game-image-container">
+                    <img class="game-image" src="./games-images/fb2024.jpg" alt="Football Manager 2024">
+                </div>
+                <div class="contents">
+                  <div class="game-title">Football Manager 2024</div>
+                  <div class="game-details">
+                    <p class="new">PS4</p> 
+                    <p class="new">PS3</p>
+                <div class="date">
+                     02/11/2023
+                </div>
+                    <span class="game-price">$59.99</span>
+                </div>
+                <div class="game-description">
+                    <p>Build your dream squad, scout top talents, and outsmart opponents in the ultimate football management simulation.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="game-grid">  
+            <div class="game-item">
+                <div class="game-image-container">
+                    <img class="game-image" src="./games-images/madden25.jpg" alt="EA Sports Madden NFL">
+                </div>
+                <div class="contents">
+                  <div class="game-title">EA Sports Madden NFL</div>
+                  <div class="game-details">
+                    <p class="new">PS4</p> 
+                    <p class="new">PS3</p>
+                <div class="date">
+                     19/08/2024
+                </div>
+                    <span class="game-price">$69.99</span>
+                </div>
+                <div class="game-description">
+                    <p>Experience the excitement of American football with dynamic gameplay, realistic player models, and engaging modes.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="game-grid">  
+            <div class="game-item">
+                <div class="game-image-container">
+                    <img class="game-image" src="./games-images/FC25REal.jpg" alt="FC 25 REAL">
+                </div>
+                <div class="contents">
+                  <div class="game-title">FC 25 REAL</div>
+                  <div class="game-details">
+                    <p class="new">PS4</p> 
+                    <p class="new">PS3</p>
+                <div class="date">
+                     29/09/2023
+                </div>
+                    <span class="game-price">$69.99</span>
+                </div>
+                <div class="game-description">
+                    <p>Dominate the pitch with enhanced gameplay, lifelike graphics, and updated team rosters in the newest football simulation.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+            
+        <div class="game-grid">  
+            <div class="game-item">
+                <div class="game-image-container">
+                    <img class="game-image" src="./games-images/Callofduty.jpg" alt="Call of Duty">
+                </div>
+                <div class="contents">
+                  <div class="game-title">Call of Duty</div>
+                  <div class="game-details">
+                    <p class="new">PS4</p> 
+                    <p class="new">PS3</p>
+                <div class="date">
+                     10/11/2023
+                </div>
+                    <span class="game-price">$69.99</span>
+                </div>
+                <div class="game-description">
+                    <p>Engage in intense battles and immersive campaigns with cutting-edge graphics and dynamic multiplayer action.</p>
+                </div>
+            </div>
+        </div>
+              
+    </div>
+    </section>
+
+</div>
+</div>
+
+
+<footer>
+    <div class="container">
+        <div class="footer-col">
+            <h4>Contact Us</h4>
+            <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+            <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Customers</h4>
+            <p><a href="#">Return Policy</a></p>
+            <p><a href="./faq.html">FAQ</a></p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Shop</h4>
+            <p><a href="./about-us.html">About Us</a></p>
+            <p><a href="#">Privacy</a></p>
+            <p><a href="./gamepg.html">Games</a></p>
+            <p><a href="./consoles.html">Consoles</a></p>
+            <p><a href="./peripherals.html">Peripherals</a></p>
+        </div>
+    </div>
+    
+    <div class="copyright">
+        <p>&copy; <span id="year"></span> GameCraft. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./gamepg.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+    <header> 
+
+        <nav class="navbar"> 
+                <div class="logo">
+                    <img src="./Images/lulu.png" alt="logo">
+                </div>
+                
+                <!-- Hamburger Menu -->
+                <input type="checkbox" id="sidebar-active">
+                <label for="sidebar-active" class="open-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                 </svg>
+                </label>
+            
+                <!--close button-->
+                <label id="overlay" for="sidebar-active"></label>
+                <!--side bar -->
+                <div class="links-container">
+                <label for="sidebar-active" class="close-sidebar-button">
+                 <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368">
+                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                 </svg>
+                 </label>
+                  
+              
+
+        
+
+       <!--Navigation Links-->
+       
+            <a href="index.html">Home </a> 
+             <a href="about-us.html">About Us </a> 
+            <a href="upcoming-games.html">Upcoming Games</a> 
+            <!--dropdown products -->
+           <div class="dropdown">
+        
+            <input type="checkbox" id="products-active">
+            <label for="products-active" class="dropdown-toggle">Products</label>
+
+                <div class="dropdown-content">
+                    <a href="./consoles.html">Consoles</a>
+                    <a href="./peripherals.html">Peripherals</a>
+                </div>
+                </div>
+               
+            <a href="./gamepg.html"> Games </a>   
+           <a href="./faq.html" class="is-active"> FAQs </a> 
+        
+    </div>
+        </nav>
+    </header>   
+    <div class="faq-pg">
+ <div class="content-section">
+    <h2>Frequently asked questions</h2>
+ 
+<div class="faq-container">
+    <div class="faq">
+        <h1>General Order Queries</h1>
+        <input type="checkbox" id="q1">
+        <label for="q1">What is the return policy?</label>
+        <p>Our return policy is 30 days from the date of purchase. The product must be in its original packaging and in the same condition as when it was purchased.</p>
+
+        <input type="checkbox" id="q2">
+        <label for="q2">How do I track my order?</label>
+        <p>Once your order has been shipped, you will receive an email with a tracking number. You can use this tracking number to track your order on the shipping carrier's website.</p>
+
+        <input type="checkbox" id="q3">
+        <label for="q3">What payment methods do you accept?</label>
+        <p>We accept all major credit cards, PayPal, and Apple Pay.</p>
+
+        <input type="checkbox" id="q4">
+        <label for="q4">How do I contact customer service?</label>
+        <p>You can contact customer service by emailing us at  <a href="mailto:gamecraft@gmail.com">gamecraft@gmail.com</a></p>
+    </div>
+
+    <div class="faq">
+        <h1>Product Queries</h1>
+        <input type="checkbox" id="q5">
+        <label for="q5">Do you offer warranty on your products?</label>
+        <p>Yes, we offer a 1-year warranty on all of our products.</p>
+
+        <input type="checkbox" id="q6">
+        <label for="q6">Do you offer international shipping?</label>
+        <p>Yes, we offer international shipping to selected countries. Please contact customer service for more information.</p>
+
+        <input type="checkbox" id="q7">
+        <label for="q7">How can I make an amendement to an order I have placed?</label>
+        <p>
+            We will always try to accommodate changes to orders, when possible, but due to our 24hr delivery turnaround, our packing team will sometimes get to your order before we see your enquiry! Please email <a href="mailto:gamecraft@gmail.com">gamecraft@gmail.com</a> as soon as possible for the best chance of making a change to your order.
+            
+            </p>
+
+        <input type="checkbox" id="q8">
+        <label for="q8">Do you offer gift wrapping?</label>
+        <p>Yes, we offer gift wrapping for an additional fee. Please contact customer service for more information.</p>
+    </div>
+
+    <div class="faq">
+        <h1>Shipping Queries</h1>
+        <input type="checkbox" id="q9">
+        <label for="q9">How long does shipping take?</label>
+        <p>Order will be processed on the same day and products will be delivered within 1-7 working days depending on your location.</p>
+
+        <input type="checkbox" id="q10">
+        <label for="q10">Do you offer expedited shipping?</label>
+        <p>Yes, we offer expedited shipping for an additional fee. Please contact customer service for more information.</p>
+
+        <input type="checkbox" id="q11">
+        <label for="q11">Do you offer free shipping?</label>
+        <p>Yes, we offer free shipping on orders over $50.</p>
+
+        <input type="checkbox" id="q12">
+        <label for="q12">Can I change my shipping address after I have placed an order?</label>
+        <p>Yes, you can change your shipping address before your order has been shipped. Please contact customer service as soon as possible to make the change.</p>
+    </div>
+</div>
+
+</div>
+<h3>For any further inquiries, please feel free to contact us using this form.</h3>
+
+<form action="submit.php" method="post">
+    <div class="name-container">
+        <input type="text" id="first_name" name="first_name" placeholder="First Name" required>
+        <input type="text" id="last_name" name="last_name" placeholder="Last Name" required>
+    </div>
+    <input type="email" id="email" name="email" placeholder="Email" required>
+    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+    <input type="submit" value="Submit">
+</form> 
+</div>
+
+<footer>
+    <div class="container">
+        <div class="footer-col">
+            <h4>Contact Us</h4>
+            <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+            <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Customers</h4>
+            <p><a href="#">Return Policy</a></p>
+            <p><a href="#">FAQ</a></p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Shop</h4>
+            <p><a href="#">About Us</a></p>
+            <p><a href="#">Privacy</a></p>
+            <p><a href="#">Games</a></p>
+            <p><a href="#">Consoles</a></p>
+            <p><a href="#">Peripherals</a></p>
+        </div>
+    </div>
+    
+    <div class="copyright">
+        <p>&copy; <span id="year"></span> GameCraft. All rights reserved.</p>
+    </div>
+</footer>
+
+
+</body>
+</html>
