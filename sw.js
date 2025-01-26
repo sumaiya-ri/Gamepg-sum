@@ -4,7 +4,7 @@ const urlsToCache = [
   '/Game assignment/index.html', // Main page
   '/Game assignment/about-us.html',
    '/Game assignment/upcoming-games.html',
-   '/Game assignment/consoles.html',
+   '/Game assignment/consoles.html', 
    '/Game assignment/peripherals.html',
    '/Game assignment/gamepg.html',
    '/Game assignment/faq.html',
