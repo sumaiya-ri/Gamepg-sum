@@ -3,13 +3,13 @@ const urlsToCache = [
   '/',
   '/Game assignment/index.html', // Main page
   '/Game assignment/about-us.html',
-   '/Game assignment/upcoming-games.html',
-   '/Game assignment/consoles.html', 
-   '/Game assignment/peripherals.html',
-   '/Game assignment/gamepg.html',
-   '/Game assignment/faq.html',
+  '/Game assignment/upcoming-games.html',
+  '/Game assignment/consoles.html',  
+  '/Game assignment/peripherals.html',
+  '/Game assignment/gamepg.html',
+  '/Game assignment/faq.html',
   '/Game assignment/gamepg.css', // Your CSS file
-   '/Game assignment/index.css',
+  '/Game assignment/index.css',
   
   '/Game assignment/favicons/favicon.ico', // Favicon
   '/Game assignment/favicons/android-icon-192x192.png', // Example icon

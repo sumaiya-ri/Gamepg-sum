@@ -1,0 +1,46 @@
+{
+  "PC_Components": {
+    "Processors": [
+      {"name": "Intel Core i9", "description": "16-core, 24-thread processor with high performance.", "price": "589.00", "image": "./components-img/internlcorei9.png"},
+      {"name": "AMD Ryzen 9", "description": "12-core, 24-thread CPU with top-tier gaming performance.", "price": "479.00", "image": "./components-img/AMDR9.png"},
+      {"name": "Intel Core i7", "description": "Powerful processor for gaming and productivity.", "price": "399.00", "image": "./components-img/internalcore7.png"},
+      {"name": "AMD Ryzen 7", "description": "8-core, 16-thread CPU designed for efficiency and gaming.", "price": "349.00", "image": "./components-img/amdryz7.webp"},
+      {"name": "Intel Core i5", "description": "Solid mid-range processor for everyday tasks and gaming.", "price": "279.00", "image": "./components-img/internalcorei5.webp"},
+      {"name": "AMD Ryzen 5", "description": "6-core, 12-thread processor for budget-friendly performance.", "price": "199.00", "image": "./components-img/amdryzen5.jpg"}
+    ],
+
+    "Graphic_Cards": [
+      {"name": "NVIDIA RTX 4090", "description": "Powerful GPU for gaming and content creation.", "price": "1699.00", "image": "./components-img/nivida4090.png"},
+      {"name": "AMD Radeon RX 7900", "description": "High-performance GPU with ray tracing support.", "price": "899.00", "image": "./components-img/Amdrayeon7900.jpg"},
+      {"name": "NVIDIA RTX 4070", "description": "Mid-range gaming GPU with great efficiency.", "price": "649.00", "image": "./components-img/nivida4070.png"},
+      {"name": "AMD Radeon RX 6700 XT", "description": "Optimized GPU for 1440p gaming.", "price": "449.00", "image": "./components-img/raedon6700.webp"},
+      {"name": "NVIDIA RTX 3060 Ti", "description": "Great performance for 1080p gaming.", "price": "379.00", "image": "./components-img/nivida3060.png"},
+      {"name": "AMD Radeon RX 6600", "description": "Budget-friendly GPU for gaming and productivity.", "price": "239.00", "image": "./components-img/amdradeonlast.png"}
+    ],
+
+    "Memory_RAM": [
+      {"name": "Corsair Vengeance 16GB", "description": "High-speed DDR4 RAM for gaming and multitasking.", "price": "89.00", "image": "./components-img/corairvege16gb.jpg"},
+      {"name": "G.Skill Trident Z 32GB", "description": "RGB DDR4 RAM with excellent overclocking capabilities.", "price": "149.00", "image": "./components-img/gskilltrident.jpg"},
+      {"name": "Kingston Fury 16GB", "description": "Reliable and fast memory module for smooth performance.", "price": "79.00", "image": "./components-img/kingstonfury.jpg"},
+      {"name": "Crucial Ballistix 8GB", "description": "Budget-friendly DDR4 RAM for everyday use.", "price": "39.00", "image": "./components-img/crucialball.jpg"}
+    ],
+
+    "Storage_Devices": [
+      {"name": "Samsung 980 Pro 1TB", "description": "Ultra-fast NVMe SSD for quick load times.", "price": "129.00", "image": "./components-img/samsung980.jpg"},
+      {"name": "Seagate Barracuda 2TB", "description": "Reliable hard drive for long-term storage.", "price": "59.00", "image": "./components-img/seagatebarracuda.jpg"},
+      {"name": "Western Digital Black 1TB", "description": "High-performance SSD for gaming and work.", "price": "109.00", "image": "./components-img/westerndigitablblack.jpg"},
+      {"name": "Toshiba X300 4TB", "description": "High-capacity HDD for gaming and storage.", "price": "89.00", "image": "./components-img/toshibaaa.png"},
+      {"name": "Crucial P5 Plus 2TB", "description": "PCIe 4.0 SSD for high-speed performance.", "price": "189.00", "image": "./components-img/crucuialp5plus.jpg"},
+      {"name": "Western Digital Blue 1TB", "description": "Budget-friendly HDD for general use.", "price": "49.00", "image": "./components-img/westernbluetb.jpg"}
+    ],
+
+    "Motherboards": [
+      {"name": "ASUS ROG Strix Z790", "description": "High-end motherboard for gaming and performance.", "price": "399.00", "image": "./components-img/asos.jpg"},
+      {"name": "MSI MAG B550", "description": "Reliable motherboard with PCIe 4.0 support.", "price": "159.00", "image": "./components-img/msibag55.jpg"},
+      {"name": "Gigabyte Aorus X670", "description": "Future-ready motherboard with DDR5 and PCIe 5.0.", "price": "289.00", "image": "./components-img/gigbaytex670.webp"},
+      {"name": "ASRock B450M Pro4", "description": "Budget-friendly motherboard for AMD CPUs.", "price": "89.00", "image": "./components-img/asrock.jpg"},
+      {"name": "MSI MPG Z690", "description": "High-end motherboard with advanced cooling.", "price": "279.00", "image": "./components-img/msimpgz.jpg"},
+      {"name": "ASUS Prime B560M", "description": "Reliable motherboard for Intel processors.", "price": "129.00", "image": "./components-img/asusprime.jpg"}
+    ]
+  }
+}
