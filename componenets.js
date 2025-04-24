@@ -45,8 +45,12 @@ function changeQuantity(name, change) {
 
 // Add item to the cart and update local storage
 function addToCartFromCard(name, price) {
-    const quantity = parseInt(document.getElementById(`qty-${name}`).value);
-    if (quantity <= 0) return alert('Please enter a valid quantity');
+    const quantity = Number(document.getElementById(`qty-${name}`).value);
+    if (!Number.isInteger(quantity) || quantity <= 0) {
+        alert('Please enter a valid numeric quantity');
+        return;
+    }  //number better than parse int
+
 
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     const existingItem = cart.find(item => item.name === name);
@@ -147,10 +151,10 @@ function saveAsFavourite() {
     alert("Your order has been saved as a favourite!");
 }
 
-// Apply the saved favourite cart to the current cart
+//Apply the saved favourite cart to the current cart 
 function applyFavourite() {
     const favouriteOrder = JSON.parse(localStorage.getItem('favouriteOrder')) || [];
-    if (favouriteOrder.length === 0) return showToast('No favourite order found');
+    if (favouriteOrder.length === 0) return alert('No favourite order found');
 
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     favouriteOrder.forEach(favItem => {
@@ -164,7 +168,7 @@ function applyFavourite() {
 
     localStorage.setItem('cart', JSON.stringify(cart));
     loadCart();
-  
+    alert('Favourite items have been added to your existing cart'); 
 }
 
 // Redirect to the order page if the cart is not empty
@@ -184,7 +188,7 @@ function buyNow() {
     window.location.href = 'order-summary.html';
 }
 
-// Event listener for "Buy Now" button (make sure to have a button with this ID)
+// Event listener for "Buy Now" button for a button with the id "buy-now"
 document.getElementById('buy-now').addEventListener('click', buyNow);
 
 
