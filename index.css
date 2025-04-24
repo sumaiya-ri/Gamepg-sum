@@ -17,7 +17,7 @@
   
 body {
     background-color: #364a63;
-    color: var(--color-light);
+    /* color: var(--color-light); */
 }
 
 
@@ -68,7 +68,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,114,1) 0%, rgba
     font-weight: 700;
     line-height: 1.2;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    background: linear-gradient(to right, var(--color-light), var(--color-purple));
+    /* background: linear-gradient(to right, var(--color-light), var(--color-purple)); */
    
     margin-bottom: 1.5rem;
 
